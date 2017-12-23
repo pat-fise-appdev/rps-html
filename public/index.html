@@ -15,7 +15,7 @@
   <!-- Connect Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.2/sketchy/bootstrap.min.css">
 
-  <!-- Connect Bootstrap JS and dependencies -->
+  <!-- Connect Bootstrap JavaScript and its dependencies -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
@@ -44,7 +44,6 @@
       </div>
     </div>
 
-
     <div class="row">
       <div class="col-md-12 mb-3">
         <h1 class="display-3">
@@ -56,6 +55,7 @@
         <p>
           From <a href="https://en.wikipedia.org/wiki/Rock–paper–scissors" target="_blank">Wikipedia</a>:
         </p>
+
         <p class="lead">
           Rock-paper-scissors (also known as paper, scissors, stone or other variants) is a hand game usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand.
         </p>
@@ -87,6 +87,41 @@
           cut[s] paper"). If both players choose the same shape, the game is tied
           and is usually immediately replayed to break the tie.
         </p>
+
+        <table class="table table-bordered text-center">
+          <tr>
+            <td rowspan="2" colspan="2"></td>
+            <td colspan="3" class="table-dark">and they play...</td>
+          </tr>
+
+          <tr>
+            <td class="bg-info">Rock</td>
+            <td class="bg-info">Paper</td>
+            <td class="bg-info">Scissors</td>
+          </tr>
+
+          <tr>
+            <td rowspan="3" class="table-dark">If we play...</td>
+            <td class="bg-info">Rock</td>
+            <td class="bg-warning">We tie</td>
+            <td class="bg-danger">We lose</td>
+            <td class="bg-success">We win</td>
+          </tr>
+
+          <tr>
+            <td class="bg-info">Paper</td>
+            <td class="bg-success">We win</td>
+            <td class="bg-warning">We tie</td>
+            <td class="bg-danger">We lose</td>
+          </tr>
+
+          <tr>
+            <td class="bg-info">Scissors</td>
+            <td class="bg-danger">We lose</td>
+            <td class="bg-success">We win</td>
+            <td class="bg-warning">We tie</td>
+          </tr>
+        </table>
 
         <p>
           Originating from China and Japan, other names for the game in the
