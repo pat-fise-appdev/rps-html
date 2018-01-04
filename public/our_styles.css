@@ -11,3 +11,9 @@ h1 {
   font-size: 72px;
   font-weight: normal;
 }
+
+.sidebar {
+  position: absolute;
+  right: 0;
+  /* width: 0px; */
+}
