@@ -38,7 +38,7 @@ h1 {
 }
 
 .border-tie {
-  border-color: yellow;
+  border-color: orange;
 }
 
 .border-lose {
@@ -50,7 +50,7 @@ h1 {
 }
 
 .text-tie {
-  color: yellow;
+  color: orange;
 }
 
 .text-lose {
