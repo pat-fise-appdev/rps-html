@@ -17,8 +17,8 @@ h1 {
 }
 
 .layout-container {
-  width: 960px;
   margin: auto;
+  width: 960px;
 }
 
 .layout-cell {
@@ -26,11 +26,26 @@ h1 {
 }
 
 .panel {
-  border-width: 2px;
-  border-style: solid;
-  border-color: black;
   margin-bottom: 10px;
   padding: 10px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.border-win {
+  border-color: green;
+}
+
+.border-lose {
+  border-color: red;
+}
+
+.text-win {
+  color: green;
+}
+
+.text-lose {
+  color: red;
 }
 
 .panel-image {
@@ -38,25 +53,28 @@ h1 {
 }
 
 .moves-table {
+  text-align: center;
   width: 100%;
+}
+
+.centered-text {
   text-align: center;
 }
 
 .fancy-link {
-  box-sizing: border-box;
-  border-radius: 10px;
-  display: inline-block;
-  text-decoration: none;
-  color: rgb(23, 162, 184);
-  width: 100%;
-  text-align: center;
-  padding: 5px;
-  border-width: 2px;
-  border-style: solid;
   border-color: rgb(23, 162, 184);
-
-  transition-property: all;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  color: rgb(23, 162, 184);
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
   transition-duration: 0.5s;
+  transition-property: all;
+  width: 100%;
 }
 
 .fancy-link:hover {
