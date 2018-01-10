@@ -28,6 +28,7 @@ h1 {
 .panel {
   margin-bottom: 10px;
   padding: 10px;
+  border-color: black;
   border-style: solid;
   border-width: 2px;
 }
@@ -36,12 +37,20 @@ h1 {
   border-color: green;
 }
 
+.border-tie {
+  border-color: yellow;
+}
+
 .border-lose {
   border-color: red;
 }
 
 .text-win {
   color: green;
+}
+
+.text-tie {
+  color: yellow;
 }
 
 .text-lose {
