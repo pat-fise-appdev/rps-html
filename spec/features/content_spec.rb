@@ -33,7 +33,7 @@ feature "Home page" do
     expect(page).to have_selector("table")
   end
 
-  it "has a link to play rock" do
+  it "has a link to play rock", points: 1 do
     visit "/"
 
     click_on "Play Rock"
@@ -41,7 +41,7 @@ feature "Home page" do
     expect(page).to have_current_path(/\/rock/)
   end
 
-  it "has a link to play paper" do
+  it "has a link to play paper", points: 1 do
     visit "/"
 
     click_on "Play Paper"
@@ -49,7 +49,7 @@ feature "Home page" do
     expect(page).to have_current_path(/\/paper/)
   end
 
-  it "has a link to play scissors" do
+  it "has a link to play scissors", points: 1 do
     visit "/"
 
     click_on "Play Scissors"
@@ -67,7 +67,7 @@ feature "Move table" do
     end
   end
 
-  it "has the correct number of cells in the first row" do
+  it "has the correct number of cells in the first row", points: 1 do
     visit "/"
 
     expect(page).to have_tag("table") do
@@ -77,7 +77,7 @@ feature "Move table" do
     end
   end
 
-  it "has the first row's cells sized correctly" do
+  it "has the first row's cells sized correctly", points: 1 do
     visit "/"
 
     expect(page).to have_tag("table") do
@@ -89,7 +89,7 @@ feature "Move table" do
     end
   end
 
-  it "has the correct number of cells in the second row" do
+  it "has the correct number of cells in the second row", points: 1 do
     visit "/"
 
     expect(page).to have_tag("table") do
@@ -103,7 +103,7 @@ feature "Move table" do
     end
   end
 
-  it "has the correct number of cells in the third row" do
+  it "has the correct number of cells in the third row", points: 1 do
     visit "/"
 
     expect(page).to have_tag("table") do
@@ -113,7 +113,7 @@ feature "Move table" do
     end
   end
 
-  it "has the correct number of cells in the fourth row" do
+  it "has the correct number of cells in the fourth row", points: 1 do
     visit "/"
 
     expect(page).to have_tag("table") do
@@ -127,7 +127,7 @@ feature "Move table" do
     end
   end
 
-  it "has the correct number of cells in the fifth row" do
+  it "has the correct number of cells in the fifth row", points: 1 do
     visit "/"
 
     expect(page).to have_tag("table") do
@@ -143,7 +143,7 @@ feature "Move table" do
 end
 
 feature "Play Rock page" do
-  it "has the correct content" do
+  it "has the correct content", points: 1 do
     visit "/rock"
 
     expect(page).to have_content("We played rock!")
@@ -167,7 +167,7 @@ feature "Play Rock page" do
     expect(page).to have_current_path(/\/rock/)
   end
 
-  it "has a link to play paper" do
+  it "has a link to play paper", points: 1 do
     visit "/"
 
     click_on "Play Paper"
@@ -185,7 +185,7 @@ feature "Play Rock page" do
 end
 
 feature "Play Paper page" do
-  it "has the correct content" do
+  it "has the correct content", points: 1 do
     visit "/paper"
 
     expect(page).to have_content("We played paper!")
@@ -201,7 +201,7 @@ feature "Play Paper page" do
     expect(page).to have_current_path("/").or have_current_path(/\/index/)
   end
 
-  it "has a link to play rock" do
+  it "has a link to play rock", points: 1 do
     visit "/"
 
     click_on "Play Rock"
@@ -217,7 +217,7 @@ feature "Play Paper page" do
     expect(page).to have_current_path(/\/paper/)
   end
 
-  it "has a link to play scissors" do
+  it "has a link to play scissors", points: 1 do
     visit "/"
 
     click_on "Play Scissors"
@@ -227,7 +227,7 @@ feature "Play Paper page" do
 end
 
 feature "Play Scissors page" do
-  it "has the correct content" do
+  it "has the correct content", points: 1 do
     visit "/scissors"
 
     expect(page).to have_content("We played scissors!")
@@ -243,7 +243,7 @@ feature "Play Scissors page" do
     expect(page).to have_current_path("/").or have_current_path(/\/index/)
   end
 
-  it "has a link to play rock" do
+  it "has a link to play rock", points: 1 do
     visit "/"
 
     click_on "Play Rock"
@@ -251,7 +251,7 @@ feature "Play Scissors page" do
     expect(page).to have_current_path(/\/rock/)
   end
 
-  it "has a link to play paper" do
+  it "has a link to play paper", points: 1 do
     visit "/"
 
     click_on "Play Paper"
@@ -259,7 +259,7 @@ feature "Play Scissors page" do
     expect(page).to have_current_path(/\/paper/)
   end
 
-  it "has a link to play scissors" do
+  it "has a link to play scissors", points: 1 do
     visit "/"
 
     click_on "Play Scissors"
