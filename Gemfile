@@ -63,7 +63,6 @@ group :development do
   gem 'binding_of_caller'
   gem 'dev_toolbar', github: 'firstdraft/dev_toolbar'
   gem 'draft_generators', github: 'firstdraft/draft_generators'
-  gem 'draft_log', github: 'firstdraft/draft_log'
   gem 'letter_opener'
   gem 'meta_request'
 end
@@ -76,5 +75,5 @@ group :test do
   gem 'webmock'
 end
 
-gem 'activeadmin', github: 'activeadmin/activeadmin'
-gem 'devise', github: 'plataformatec/devise'
+gem 'activeadmin'
+gem 'devise'
