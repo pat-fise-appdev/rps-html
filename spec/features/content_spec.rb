@@ -18,7 +18,7 @@ feature "Home page" do
   it "has a link to Wikipedia", points: 1 do
     visit "/"
 
-    expect(page).to have_link("Wikipedia", href: "https://en.wikipedia.org/wiki/Rock–paper–scissors")
+    expect(page).to have_link("Wikipedia", href: /wikipedia.org/)
   end
 
   it "has some paragraphs", points: 1 do
